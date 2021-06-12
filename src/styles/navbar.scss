@@ -3,16 +3,20 @@
   font-family: "Nothing You Could Do", cursive;
   position: fixed;
   z-index: 1;
-  color: antiquewhite;
   width: 100%;
   .nav__wrapper {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    a{
+      text-decoration: none;
+      color: antiquewhite;
+    }
     .home {
       font-size: 5rem;
       margin-left: 20px;
       cursor: pointer;
+      text-decoration: none;
     }
     .port {
       font-size: 4.3rem;

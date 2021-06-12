@@ -1,7 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
 .landing__page {
-  img {
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
+  font-family: "Nothing You Could Do", cursive;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-image: url("/images/food.jpg");
+  background-repeat: no-repeat;
+  background-size: 1600px 1000px;
+  background-position: center center;
+  @media (max-width: 1200px) {
+    background-size: 1500px 760px;
+  }
+  @media (max-width: 755px) {
+    background-size: cover;
+  }
+  .header__wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15%;
+    .logo {
+      height: 200px;
+      width: 200px;
+    }
+    .head__span__wrap {
+      display: flex;
+      font-size: 4.5rem;
+      .header__text1 {
+        // opacity: 0;
+        // transition: all 1s ease-in-out;
+        // animation: showsteps 1s ease-in;
+      }
+      .header__text2 {
+        // opacity: 0;
+      }
+      .header__text3 {
+        // opacity: 0;
+      }
+      .header__text4 {
+        // opacity: 0;
+      }
+      .header__text5 {
+        // opacity: 0;
+      }
+      .header__text6 {
+        // opacity: 0;
+      }
+      .header__text7 {
+        // opacity: 0;
+      }
+      .header__text8 {
+        // opacity: 0;
+      }
+      .header__text9 {
+        // opacity: 0;
+      }
+      .header__text10 {
+        // opacity: 0;
+      }
+      .header__text11 {
+        // opacity: 0;
+      }
+    }
+  }
+  .text__section {
+    width: 100%;
+    margin: 20% 0% 0% 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0rem;
+    font-size: 2rem;
+    .text__wrap__one,
+    .text__wrap__two,
+    .text__wrap__three {
+      .text__head {
+        position: relative;
+        // background-color: cornflowerblue;
+        .mask {
+          position: absolute;
+          display: block;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          // background-color: chocolate;
+        }
+      }
+    }
+    .text__wrap__one {
+    }
+    .text__wrap__two {
+    }
+    .text__wrap__three {
+    }
+  }
+}
+@keyframes showsteps {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
