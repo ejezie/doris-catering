@@ -1,0 +1,2 @@
+Could not find a declaration file for module 'react-rellax'. 'c:/Users/Ejezie Chinedu/Documents/Project/Catering/my-catering-app/node_modules/react-rellax/lib/index.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react-rellax` if it exists or add a new declaration (.d.ts) file containing `declare module 'react-rellax';`

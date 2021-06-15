@@ -1,5 +1,5 @@
 import React from "react";
-import oven from "../images/oven.jpg"
+// import oven from "../images/oven.jpg"
 
 function Portfolio() {
   return (

@@ -1,12 +1,21 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+// import Parallax from "react-rellax";
 import logo from "../images/logo.png";
 import { TimelineMax, Power1 } from "gsap";
-import Parallax from "react-rellax";
+// import { Parallax } from "react-scroll-parallax";
 
 function LandingPage() {
+  const [offsetY, setOffsetY] = useState(0);
+
+  const handleScroll = () => {
+    setOffsetY(window.pageYOffset);
+  };
   useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
     main();
+    return () => window.removeEventListener("scroll", handleScroll)
   });
+
   function main() {
     let animsOne = document.querySelectorAll(".anim-text");
 
@@ -35,7 +44,7 @@ function LandingPage() {
 
   return (
     <div className="landing__page">
-      <Parallax className="header__wrap" speed={600}>
+      <div className="header__wrap" style={{transform: `translateY(${offsetY * 0.3}px)`}}>
         <img className="logo" src={logo} alt="logo" />
         <div className="head__span__wrap">
           <h1 className="header__text1">
@@ -75,11 +84,11 @@ function LandingPage() {
 
         <div className="header__span__wrap"></div>
         <div className="line"></div>
-      </Parallax>
+      </div>
       {/*  */}
       {/*  */}
       <section className="text__section">
-        <Parallax className="text__wrap__one anim-text" speed={-40}>
+        <div className="text__wrap__one anim-text" style={{transform: `translateY(${offsetY * 0.3}px)`}}>
           <h3 className="text__head">
             <span className="text">I make the best cake you</span>
             <span className="mask"></span>
@@ -120,9 +129,9 @@ function LandingPage() {
             <span className="text">I make the best cake you</span>
             <span className="mask"></span>
           </h3>
-        </Parallax>
+        </div>
         {/*  */}
-        <div className="text__wrap__two anim-text">
+        <div className="text__wrap__two anim-text" style={{transform: `translateY(${offsetY * 0.2}px)`}}>
           <h3 className="text__head">
             <span className="text">I make the best cake you</span>
             <span className="mask"></span>
@@ -165,7 +174,7 @@ function LandingPage() {
           </h3>
         </div>
         {/*  */}
-        <div className="text__wrap__three anim-text">
+        <div className="text__wrap__three anim-text" style={{transform: `translateY(${offsetY * 0.1}px)`}}>
           <h3 className="text__head">
             <span className="text">I make the best cake you</span>
             <span className="mask"></span>
@@ -209,9 +218,7 @@ function LandingPage() {
         </div>
         {/*  */}
       </section>
-      <footer className="footer">
-
-      </footer>
+      <footer className="footer" style={{transform: `translateY(${offsetY * 0.5}px)`}}></footer>
     </div>
   );
 }

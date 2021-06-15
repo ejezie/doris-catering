@@ -2,13 +2,14 @@
 .navbar {
   font-family: "Nothing You Could Do", cursive;
   position: fixed;
+  top: 0;
   z-index: 1;
   width: 100%;
   .nav__wrapper {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    a{
+    a {
       text-decoration: none;
       color: antiquewhite;
     }

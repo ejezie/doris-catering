@@ -1,18 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
 .landing__page {
   font-family: "Nothing You Could Do", cursive;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  background-image: url("/images/food.jpg");
-  background-repeat: no-repeat;
-  background-size: 1600px 1000px;
-  background-position: center center;
-  &::-webkit-scrollbar {
-    display: none;
-  }
   @media (max-width: 1200px) {
     background-size: 1500px 760px;
   }
