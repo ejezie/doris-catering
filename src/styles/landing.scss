@@ -24,7 +24,7 @@
     align-items: center;
     flex-direction: column;
     margin-top: 14%;
-    background-color: wheat;
+    // background-color: wheat;
     .logo {
       height: 250px;
       width: 250px;
@@ -111,6 +111,11 @@
     }
     .text__wrap__three {
     }
+  }
+  .footer {
+    height: 250px;
+    background-color: rgb(255, 86, 24);
+    width: 100%;
   }
 }
 @keyframes showsteps {
