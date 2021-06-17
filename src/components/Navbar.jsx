@@ -1,22 +1,22 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 
 function Navbar() {
   return (
     <div className="navbar">
       <div className="nav__wrapper">
-        <NavLink to="/">
+        <Link to="/">
           <div className="home">Home</div>
-        </NavLink>
-        <NavLink to="/portfolio">
+        </Link>
+        <Link to="portfolio" smooth={true} duration={1000}>
           <div className="port">portfolio</div>
-        </NavLink>
-        <NavLink to="/contact">
+        </Link>
+        <Link to="/contact">
           <div className="contact">Contact</div>
-        </NavLink>
-        <NavLink to="/about">
+        </Link>
+        <Link to="/about">
           <div className="about">About</div>
-        </NavLink>
+        </Link>
       </div>
     </div>
   );

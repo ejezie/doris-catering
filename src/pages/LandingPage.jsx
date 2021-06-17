@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 // import Parallax from "react-rellax";
 import logo from "../images/logo.png";
 import { TimelineMax, Power1 } from "gsap";
+import Portfolio from "../components/Portfolio";
 // import { Parallax } from "react-scroll-parallax";
 
 function LandingPage() {
@@ -13,7 +14,7 @@ function LandingPage() {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     main();
-    return () => window.removeEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll);
   });
 
   function main() {
@@ -44,7 +45,10 @@ function LandingPage() {
 
   return (
     <div className="landing__page">
-      <div className="header__wrap" style={{transform: `translateY(${offsetY * 0.3}px)`}}>
+      <div
+        className="header__wrap"
+        id="home"
+        style={{ transform: `translateY(${offsetY * 0.3}px)` }}>
         <img className="logo" src={logo} alt="logo" />
         <div className="head__span__wrap">
           <h1 className="header__text1">
@@ -88,7 +92,9 @@ function LandingPage() {
       {/*  */}
       {/*  */}
       <section className="text__section">
-        <div className="text__wrap__one anim-text" style={{transform: `translateY(${offsetY * 0.3}px)`}}>
+        <div
+          className="text__wrap__one anim-text"
+          style={{ transform: `translateY(${offsetY * 0.3}px)` }}>
           <h3 className="text__head">
             <span className="text">I make the best cake you</span>
             <span className="mask"></span>
@@ -131,7 +137,9 @@ function LandingPage() {
           </h3>
         </div>
         {/*  */}
-        <div className="text__wrap__two anim-text" style={{transform: `translateY(${offsetY * 0.2}px)`}}>
+        <div
+          className="text__wrap__two anim-text"
+          style={{ transform: `translateY(${offsetY * 0.2}px)` }}>
           <h3 className="text__head">
             <span className="text">I make the best cake you</span>
             <span className="mask"></span>
@@ -174,7 +182,9 @@ function LandingPage() {
           </h3>
         </div>
         {/*  */}
-        <div className="text__wrap__three anim-text" style={{transform: `translateY(${offsetY * 0.1}px)`}}>
+        <div
+          className="text__wrap__three anim-text"
+          style={{ transform: `translateY(${offsetY * 0.1}px)` }}>
           <h3 className="text__head">
             <span className="text">I make the best cake you</span>
             <span className="mask"></span>
@@ -218,7 +228,46 @@ function LandingPage() {
         </div>
         {/*  */}
       </section>
-      <footer className="footer" style={{transform: `translateY(${offsetY * 0.5}px)`}}></footer>
+      {/*  */}
+      <section className="portfolios" id="portfolio">
+        <Portfolio
+          name={"Cake "}
+          Ingredient={"flour, egg, cheese, chocolate "}
+          rating={"rating: "}
+          style={{ transform: `translateY(${offsetY * 1}px)` }}
+        />
+        <Portfolio
+          name={"Cake "}
+          Ingredient={"flour, egg, cheese, chocolate "}
+          rating={"rating: "}
+          style={{ transform: `translateY(${offsetY * 1}px)` }}
+        />
+        <Portfolio
+          name={"Cake "}
+          Ingredient={"flour, egg, cheese, chocolate "}
+          rating={"rating: "}
+          style={{ transform: `translateY(${offsetY * 1}px)` }}
+        />
+        <Portfolio
+          name={"Cake "}
+          Ingredient={"flour, egg, cheese, chocolate "}
+          rating={"rating: "}
+          style={{ transform: `translateY(${offsetY * 1}px)` }}
+        />
+        <Portfolio
+          name={"Cake "}
+          Ingredient={"flour, egg, cheese, chocolate "}
+          rating={"rating: "}
+          style={{ transform: `translateY(${offsetY * 1}px)` }}
+        />
+        <Portfolio
+          name={"Cake "}
+          Ingredient={"flour, egg, cheese, chocolate "}
+          rating={"rating: "}
+          style={{ transform: `translateY(${offsetY * 1}px)` }}
+        />
+      </section>
+      {/* <footer className="footer" style={{transform: `translateY(${offsetY * 0.5}px)`}}></footer> */}
     </div>
   );
 }

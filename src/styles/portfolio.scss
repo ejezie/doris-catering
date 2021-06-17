@@ -1,3 +1,18 @@
 .portfolio {
-  z-index: 1;
+  .drop {
+    .port__image__wrap {
+      display: flex;
+      align-items: center;
+    //   justify-content: center;
+      .cake {
+        height: 500px;
+        width: 450px;
+        object-fit: contain;
+      }
+      i {
+        font-size: 3rem;   
+        color: red;
+      }
+    }
+  }
 }

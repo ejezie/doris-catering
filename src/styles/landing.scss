@@ -105,6 +105,13 @@
     background-color: rgb(255, 86, 24);
     width: 100%;
   }
+  .portfolios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    // gap: 2rem;
+    width: 100%;
+    height: 100vh;
+  }
 }
 @keyframes showsteps {
   0% {
