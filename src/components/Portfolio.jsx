@@ -1,14 +1,36 @@
-import React from "react";
-import cake from "../images/delivery.jpg";
+import React, { useState } from "react";
 
-function Portfolio({ name, ingredient, rating }) {
+function Portfolio({ name, Ingredient, rating, image }) {
+  const [rotateIcon, setRotateIcon] = useState(false);
+  const [rotateDrop, setRotateDrop] = useState(false);
+  const handleRotate = () => {
+    setRotateIcon(!rotateIcon);
+    setRotateDrop(!rotateDrop);
+  };
   return (
     <div className="portfolio">
-      <div className="drop">
-        <div className="port__image__wrap">
-          <i class="fas fa-chevron-down"></i>
-          <img src={cake} alt="cake"  className="cake" />
+      <div className={`${rotateDrop ? 'drop' : 'dropped'}`}>
+        <div className="drop__content">
+          <p>Name : {name}</p>
+          <p>Ingredient : {Ingredient}</p>
+          <p>
+            {rating} <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </p>
         </div>
+      </div>
+      <div className="port__image__wrap">
+        <div className="icon__wrap">
+          <i
+            className={`fas fa-chevron-down ${
+              rotateIcon ? "rotate__arrow" : "icon__arrow"
+            }`}
+            onClick={handleRotate}></i>
+        </div>
+        <img src={image} alt="cake" className="cake" />
       </div>
     </div>
   );

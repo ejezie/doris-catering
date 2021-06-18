@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import logo from "../images/logo.png";
 import { TimelineMax, Power1 } from "gsap";
 import Portfolio from "../components/Portfolio";
+import cake from "../images/delivery.jpg";
+import bgcake from "../images/bgcake.png";
 // import { Parallax } from "react-scroll-parallax";
 
 function LandingPage() {
@@ -40,7 +42,7 @@ function LandingPage() {
 
   function runAnim(targetOne) {
     let tl = new TimelineMax();
-    tl.staggerTo(targetOne, 4, { scaleX: 0, ease: Power1.easeInOut }, 1);
+    tl.staggerTo(targetOne, 1, { scaleX: 0, ease: Power1.easeInOut }, 1);
   }
 
   return (
@@ -85,7 +87,7 @@ function LandingPage() {
             <span>N</span>
           </h1>
         </div>
-
+        <img src={bgcake} alt="" className="bgimgone" style={{ transform: `translateY(${offsetY * 0.7}px)` }}/>
         <div className="header__span__wrap"></div>
         <div className="line"></div>
       </div>
@@ -115,51 +117,11 @@ function LandingPage() {
             <span className="text">I make the best cake you</span>
             <span className="mask"></span>
           </h3>
-          <h3 className="text__head">
-            <span className="text">I make the best cake you</span>
-            <span className="mask"></span>
-          </h3>
-          <h3 className="text__head">
-            <span className="text">I make the best cake you</span>
-            <span className="mask"></span>
-          </h3>
-          <h3 className="text__head">
-            <span className="text">I make the best cake you</span>
-            <span className="mask"></span>
-          </h3>
-          <h3 className="text__head">
-            <span className="text">I make the best cake you</span>
-            <span className="mask"></span>
-          </h3>
-          <h3 className="text__head">
-            <span className="text">I make the best cake you</span>
-            <span className="mask"></span>
-          </h3>
         </div>
         {/*  */}
         <div
           className="text__wrap__two anim-text"
           style={{ transform: `translateY(${offsetY * 0.2}px)` }}>
-          <h3 className="text__head">
-            <span className="text">I make the best cake you</span>
-            <span className="mask"></span>
-          </h3>
-          <h3 className="text__head">
-            <span className="text">I make the best cake you</span>
-            <span className="mask"></span>
-          </h3>
-          <h3 className="text__head">
-            <span className="text">I make the best cake you</span>
-            <span className="mask"></span>
-          </h3>
-          <h3 className="text__head">
-            <span className="text">I make the best cake you</span>
-            <span className="mask"></span>
-          </h3>
-          <h3 className="text__head">
-            <span className="text">I make the best cake you</span>
-            <span className="mask"></span>
-          </h3>
           <h3 className="text__head">
             <span className="text">I make the best cake you</span>
             <span className="mask"></span>
@@ -205,67 +167,69 @@ function LandingPage() {
             <span className="text">I make the best cake you</span>
             <span className="mask"></span>
           </h3>
-          <h3 className="text__head">
-            <span className="text">I make the best cake you</span>
-            <span className="mask"></span>
-          </h3>
-          <h3 className="text__head">
-            <span className="text">I make the best cake you</span>
-            <span className="mask"></span>
-          </h3>
-          <h3 className="text__head">
-            <span className="text">I make the best cake you</span>
-            <span className="mask"></span>
-          </h3>
-          <h3 className="text__head">
-            <span className="text">I make the best cake you</span>
-            <span className="mask"></span>
-          </h3>
-          <h3 className="text__head">
-            <span className="text">I make the best cake you</span>
-            <span className="mask"></span>
-          </h3>
         </div>
         {/*  */}
       </section>
       {/*  */}
       <section className="portfolios" id="portfolio">
-        <Portfolio
-          name={"Cake "}
-          Ingredient={"flour, egg, cheese, chocolate "}
-          rating={"rating: "}
-          style={{ transform: `translateY(${offsetY * 1}px)` }}
-        />
-        <Portfolio
-          name={"Cake "}
-          Ingredient={"flour, egg, cheese, chocolate "}
-          rating={"rating: "}
-          style={{ transform: `translateY(${offsetY * 1}px)` }}
-        />
-        <Portfolio
-          name={"Cake "}
-          Ingredient={"flour, egg, cheese, chocolate "}
-          rating={"rating: "}
-          style={{ transform: `translateY(${offsetY * 1}px)` }}
-        />
-        <Portfolio
-          name={"Cake "}
-          Ingredient={"flour, egg, cheese, chocolate "}
-          rating={"rating: "}
-          style={{ transform: `translateY(${offsetY * 1}px)` }}
-        />
-        <Portfolio
-          name={"Cake "}
-          Ingredient={"flour, egg, cheese, chocolate "}
-          rating={"rating: "}
-          style={{ transform: `translateY(${offsetY * 1}px)` }}
-        />
-        <Portfolio
-          name={"Cake "}
-          Ingredient={"flour, egg, cheese, chocolate "}
-          rating={"rating: "}
-          style={{ transform: `translateY(${offsetY * 1}px)` }}
-        />
+        <div className="port__wrap">
+          <div className="port__item">
+            <Portfolio
+              name={"Cake "}
+              image = {cake}
+              Ingredient={"flour, egg, cheese, chocolate "}
+              rating={"rating: "}
+              style={{ transform: `translateY(${offsetY * 0.3}px)` }}
+            />
+          </div>
+          <div className="port__item">
+            <Portfolio
+              name={"Cake "}
+              image = {cake}
+              Ingredient={"flour, egg, cheese, chocolate "}
+              rating={"rating: "}
+              style={{ transform: `translateY(${offsetY * 0.2}px)` }}
+            />
+          </div>
+          <div className="port__item">
+            <Portfolio
+              name={"Cake "}
+              image = {cake}
+              Ingredient={"flour, egg, cheese, chocolate "}
+              rating={"rating: "}
+              style={{ transform: `translateY(${offsetY * 0.1}px)` }}
+            />
+          </div>
+        </div>
+        <div className="port__wraptwo">
+          <div className="port__item">
+            <Portfolio
+              name={"Cake "}
+              image = {cake}
+              Ingredient={"flour, egg, cheese, chocolate "}
+              rating={"rating: "}
+              style={{ transform: `translateY(${offsetY * 1}px)` }}
+            />
+          </div>
+          <div className="port__item">
+            <Portfolio
+              name={"Cake"}
+
+image = {cake}              Ingredient={"flour, egg, cheese, chocolate"}
+              rating={"rating: "}
+              style={{ transform: `translateY(${offsetY * 1}px)` }}
+            />
+          </div>
+          <div className="port__item">
+            <Portfolio
+              name={"Cake "}
+              image = {cake}
+              Ingredient={"flour, egg, cheese, chocolate "}
+              rating={"rating: "}
+              style={{ transform: `translateY(${offsetY * 1}px)` }}
+            />
+          </div>
+        </div>
       </section>
       {/* <footer className="footer" style={{transform: `translateY(${offsetY * 0.5}px)`}}></footer> */}
     </div>
