@@ -1,38 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
 .landing__page {
   font-family: "Nothing You Could Do", cursive;
-  @media (max-width: 1200px) {
-    background-size: 1500px 760px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    display: none;
   }
-  @media (max-width: 755px) {
-    background-size: cover;
-  }
-  overflow-y: hidden;
   .header__wrap {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 16%;
+    margin-top: 20%;
     .title__header {
       // font-size: 3rem;
     }
     .bgimgone {
       z-index: -1;
-      margin: -35% 40% 0% 0%;
+      margin: -33% 40% 0% 0%;
     }
   }
   .cocktail__wrap {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 12%;
+    margin-top: 1%;
     .title__header {
       // font-size: 3rem;
+      // margin-top: 50%;
     }
     .bgimgtwo {
       z-index: -1;
-      margin: -30% 0% 0% 50%;
-      background-color: red;
+      margin: -20% 0% 0% 50%;
+      background-color: rgba(141, 8, 8, 0.5);
       border-radius: 25px;
     }
   }
@@ -40,7 +39,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 14%;
+    margin-top: -10%;
     z-index: 1;
     // height: 100vh;
     .food__header {
@@ -48,12 +47,13 @@
     }
     .bgimgthree {
       z-index: -1;
-      margin: -15% 40% 0% 0%;
+      margin: 15% 60% 0% 0%;
     }
   }
   .portfolios {
     width: 100%;
-    height: 100vh;
+    margin-top: -30%;
+    padding: 2%;
     .port__wrap {
       display: grid;
       justify-content: center;
@@ -62,7 +62,7 @@
       overflow: hidden;
       width: 100vw;
       height: 50vh;
-      background-color: salmon;
+      // background-color: salmon;
       .port__item {
         margin: -40% 0% 0% 0%;
       }
@@ -75,9 +75,50 @@
       height: 50vh;
       justify-content: center;
       align-items: center;
-      background-color: seagreen;
+      // background-color: seagreen;
       .port__item {
         margin: -40% 0% 0% 0%;
+      }
+    }
+  }
+  .contact {
+    .contact__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .contact__image {
+      }
+      .contact__icons {
+        font-size: 3rem;
+        color: gold;
+        .call,
+        .whatsapp,
+        .email {
+          display: flex;
+          align-items: center;
+        }
+        i {
+          margin-right: 15px;
+        }
+        .contact__form {
+          display: flex;
+          flex-direction: column;
+          background-color: rgba(255, 255, 255, 0.5);
+          padding: 4%;
+          font-size: 2rem;
+          width: 550px;
+          height: 350px;
+          border-radius: 25px;
+        }
+        #message {
+          background-color: rgba(255, 255, 255, 0);
+          color: gold;
+          border: none;
+          font-family: "Nothing You Could Do", cursive;
+          width: 510px;
+          height: 330px;
+          outline: none;
+        }
       }
     }
   }
