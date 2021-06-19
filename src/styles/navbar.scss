@@ -7,33 +7,44 @@
   width: 100%;
   .nav__wrapper {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    a {
-      text-decoration: none;
-      color: antiquewhite;
-    }
-    .home {
+    justify-content: space-between;
+    .dora {
       font-size: 5rem;
       margin-left: 20px;
       cursor: pointer;
       text-decoration: none;
+      font-weight: 900;
     }
-    .port {
-      font-size: 4.3rem;
-      margin-left: 20px;
-      cursor: pointer;
-    }
-    .contact {
-      font-size: 3.3rem;
-      margin-left: 20px;
-      cursor: pointer;
-    }
-    .about {
-      font-size: 2.5rem;
-      margin-left: 20px;
-      margin-right: 20px;
-      cursor: pointer;
+    .links {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      a {
+        text-decoration: none;
+        color: antiquewhite;
+      }
+      .home {
+        font-size: 4rem;
+        margin-left: 20px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .port {
+        font-size: 3.3rem;
+        margin-left: 20px;
+        cursor: pointer;
+      }
+      .contact {
+        font-size: 2.7rem;
+        margin-left: 20px;
+        cursor: pointer;
+      }
+      .about {
+        font-size: 2.1rem;
+        margin-left: 20px;
+        margin-right: 20px;
+        cursor: pointer;
+      }
     }
   }
 }
