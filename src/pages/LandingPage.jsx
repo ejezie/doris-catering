@@ -11,7 +11,12 @@ import Portfolio from "../components/Portfolio";
 import cake from "../images/delivery.jpg";
 import bgcake from "../images/bgcake.png";
 import contactbyk from "../images/contactbyk.png";
-// import { Parallax } from "react-scroll-parallax";
+import egusi from "../images/egusi.png";
+import chop from "../images/chop.png";
+import jollof from "../images/jollof.png";
+import pcake from "../images/pcake.png";
+import assort from "../images/assort.png";
+import fried from "../images/fried.png";
 
 function LandingPage() {
   // const [offsetY, setOffsetY] = useState(0);
@@ -100,25 +105,25 @@ function LandingPage() {
           <div className="port__wrap">
             <div className="port__item">
               <Portfolio
-                name={"Cake "}
-                image={cake}
-                Ingredient={"flour, egg, cheese, chocolate "}
+                name={"Egusi "}
+                image={egusi}
+                Ingredient={"egusi, palm oil, meat, fufu "}
                 rating={"rating: "}
               />
             </div>
             <div className="port__item">
               <Portfolio
-                name={"Cake "}
-                image={cake}
-                Ingredient={"flour, egg, cheese, chocolate "}
+                name={"Small chops"}
+                image={chop}
+                Ingredient={"flour, egg, letus, meat"}
                 rating={"rating: "}
               />
             </div>
             <div className="port__item">
               <Portfolio
-                name={"Cake "}
-                image={cake}
-                Ingredient={"flour, egg, cheese, chocolate "}
+                name={"Jollof Rice"}
+                image={jollof}
+                Ingredient={"Rice, Tomatoes, Chicken, Onions"}
                 rating={"rating: "}
               />
             </div>
@@ -128,25 +133,25 @@ function LandingPage() {
           <div className="port__wraptwo">
             <div className="port__item">
               <Portfolio
-                name={"Cake "}
-                image={cake}
-                Ingredient={"flour, egg, cheese, chocolate "}
-                rating={"rating: "}
-              />
-            </div>
-            <div className="port__item">
-              <Portfolio
                 name={"Cake"}
-                image={cake}
-                Ingredient={"flour, egg, cheese, chocolate"}
+                image={pcake}
+                Ingredient={"flour, egg, cheese, chocolate "}
                 rating={"rating: "}
               />
             </div>
             <div className="port__item">
               <Portfolio
-                name={"Cake "}
-                image={cake}
-                Ingredient={"flour, egg, cheese, chocolate "}
+                name={"Pepe Soup"}
+                image={assort}
+                Ingredient={"meat, ehuru, uda, onions"}
+                rating={"rating: "}
+              />
+            </div>
+            <div className="port__item">
+              <Portfolio
+                name={"Fried Rice"}
+                image={fried}
+                Ingredient={"Rice, Chicken, Onions, vegetables"}
                 rating={"rating: "}
               />
             </div>
@@ -154,36 +159,40 @@ function LandingPage() {
         </Parallax>
       </section>
       {/*  */}
-      <section className="contact">
-        <div className="contact__wrapper">
-          <Parallax speed={-4} className="contact__img">
+      <Parallax speed={-4}>
+        <section className="contact">
+          <Parallax className="contact__img">
             <img src={contactbyk} alt="" />
           </Parallax>
-          <Parallax speed={-4} className="contact__icons">
+          <Parallax className="contact__icons">
             <div className="call">
-              <h3>Call</h3>
+              <h3>Call Us : 08068331683 </h3>
               <i class="fas fa-phone-alt"></i>
             </div>
             <div className="whatsapp">
-              <h3>WhatsApp</h3>
+              <h3>WhatsApp : 08068331683</h3>
               <i class="fab fa-whatsapp"></i>
             </div>
             <div className="email">
-              <h3>Email</h3>
+              <h3>Email : dorafc19@gmail.com</h3>
+              <i class="far fa-envelope-open"></i>
+            </div>
+            <div className="email">
+              <h3>Send us a message</h3>
               <i class="far fa-envelope-open"></i>
             </div>
             <form action="#" className="contact__form">
-              <label htmlFor="message">Tell us what you want!</label>
+              {/* <label htmlFor="message">Tell us what you want!</label> */}
               <textarea
                 name="message"
                 id="message"
                 cols="30"
-                placeholder="type here"
                 rows="10"></textarea>
+              <button className="button">submit</button>
             </form>
           </Parallax>
-        </div>
-      </section>
+        </section>
+      </Parallax>
 
       {/* <footer className="footer" style={{transform: `translateY(${offsetY * 0.5}px)`}}></footer> */}
     </div>
