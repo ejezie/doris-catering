@@ -6,7 +6,7 @@ function Navbar() {
     <div className="navbar">
       <div className="nav__wrapper">
         <Link to="home" smooth={true} duration={1000}>
-          <div className="dora">DORAKITCHEN</div>
+          <div className="dora">DoraGroovyKitchen</div>
         </Link>
         <div className="links">
           <Link to="home" smooth={true} duration={1000}>

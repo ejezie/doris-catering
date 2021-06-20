@@ -17,6 +17,7 @@ import jollof from "../images/jollof.png";
 import pcake from "../images/pcake.png";
 import assort from "../images/assort.png";
 import fried from "../images/fried.png";
+import logo from "../images/logo.png";
 
 function LandingPage() {
   // const [offsetY, setOffsetY] = useState(0);
@@ -161,28 +162,14 @@ function LandingPage() {
       {/*  */}
       <Parallax speed={-4}>
         <section className="contact">
-          <Parallax className="contact__img">
+          <div className="contact__img">
             <img src={contactbyk} alt="" />
-          </Parallax>
-          <Parallax className="contact__icons">
-            <div className="call">
-              <h3>Call Us : 08068331683 </h3>
-              <i class="fas fa-phone-alt"></i>
-            </div>
-            <div className="whatsapp">
-              <h3>WhatsApp : 08068331683</h3>
-              <i class="fab fa-whatsapp"></i>
-            </div>
-            <div className="email">
-              <h3>Email : dorafc19@gmail.com</h3>
-              <i class="far fa-envelope-open"></i>
-            </div>
-            <div className="email">
-              <h3>Send us a message</h3>
-              <i class="far fa-envelope-open"></i>
-            </div>
+          </div>
+          <div className="contact__icons">
             <form action="#" className="contact__form">
-              {/* <label htmlFor="message">Tell us what you want!</label> */}
+              <h3>
+                Send us a message <i class="far fa-envelope-open"></i>
+              </h3>
               <textarea
                 name="message"
                 id="message"
@@ -190,11 +177,46 @@ function LandingPage() {
                 rows="10"></textarea>
               <button className="button">submit</button>
             </form>
-          </Parallax>
+            <div className="contact__text__wrap">
+              <div className="contact__text">
+                <h3>
+                  <i class="fas fa-phone-alt"></i> 07055579622{" "}
+                </h3>
+              </div>
+              <div className="contact__text">
+                <h3>
+                  <i class="fab fa-whatsapp"></i> 08068331683
+                </h3>
+              </div>
+              <div className="contact__text">
+                <h3>
+                  <i class="far fa-envelope-open"></i> dorafc19@gmail.com
+                </h3>
+              </div>
+            </div>
+          </div>
         </section>
       </Parallax>
-
-      {/* <footer className="footer" style={{transform: `translateY(${offsetY * 0.5}px)`}}></footer> */}
+      <Parallax speed={-3.5}>
+        <div className="black__bg">
+          <h1>DoraGroovyKitchen</h1>
+          <img src={logo} alt="" />
+        </div>
+      </Parallax>
+      <Parallax speed={-4}>
+        <section className="about">
+          <div className="about__wrap">
+            <img src="" alt="" />
+            <p>
+              I am Doris, Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Minima magnam optio velit labore quod dolores, at fugiat
+              tempora perspiciatis nesciunt, quasi quisquam obcaecati animi
+              nobis pariatur vitae possimus delectus praesentium?
+            </p>
+            <div className="foot"></div>
+          </div>
+        </section>
+      </Parallax>
     </div>
   );
 }
