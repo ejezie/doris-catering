@@ -58,7 +58,7 @@
   .portfolios {
     width: 90%;
     margin: -55% 0% 0% -8.6%;
-    padding: 10%;
+    padding: 15%;
     .port__wrap {
       display: grid;
       justify-content: center;
@@ -84,6 +84,10 @@
       .port__item {
         margin: -40% 0% 0% 0%;
       }
+    }
+    .bgimgfour{
+      z-index: -1;
+      margin: 40% 0% 0% 60%;
     }
   }
   .contact {

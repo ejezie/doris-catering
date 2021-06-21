@@ -18,6 +18,7 @@ import pcake from "../images/pcake.png";
 import assort from "../images/assort.png";
 import fried from "../images/fried.png";
 import logo from "../images/logo.png";
+import bgtray from "../images/bgtray.png";
 
 function LandingPage() {
   // const [offsetY, setOffsetY] = useState(0);
@@ -103,6 +104,7 @@ function LandingPage() {
 
       <section className="portfolios" id="portfolio">
         <Parallax speed={-4}>
+          <h1>Portfolio</h1>
           <div className="port__wrap">
             <div className="port__item">
               <Portfolio
@@ -124,7 +126,7 @@ function LandingPage() {
               <Portfolio
                 name={"Jollof Rice"}
                 image={jollof}
-                Ingredient={"Rice, Tomatoes, Chicken, Onions"}
+                Ingredient={"Rice, Tomatoes, Chicken"}
                 rating={"rating: "}
               />
             </div>
@@ -152,11 +154,14 @@ function LandingPage() {
               <Portfolio
                 name={"Fried Rice"}
                 image={fried}
-                Ingredient={"Rice, Chicken, Onions, vegetables"}
+                Ingredient={"Rice, Chicken, Onions"}
                 rating={"rating: "}
               />
             </div>
           </div>
+        </Parallax>
+        <Parallax speed={0} className="bgimgfour">
+          <img src={bgtray} alt="" />
         </Parallax>
       </section>
       {/*  */}

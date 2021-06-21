@@ -9,7 +9,7 @@ function Portfolio({ name, Ingredient, rating, image }) {
   };
   return (
     <div className="portfolio">
-      <div className={`${rotateDrop ? 'drop' : 'dropped'}`}>
+      <div className={`${rotateDrop ? "drop" : "dropped"}`}>
         <div className="drop__content">
           <p>Name : {name}</p>
           <p>Ingredient : {Ingredient}</p>
@@ -27,10 +27,14 @@ function Portfolio({ name, Ingredient, rating, image }) {
           <i
             className={`fas fa-chevron-down ${
               rotateIcon ? "rotate__arrow" : "icon__arrow"
-            }`}
+            } `}
             onClick={handleRotate}></i>
         </div>
-        <img src={image} alt="cake" className="cake" />
+        <img
+          src={image}
+          alt="cake"
+          className={`${rotateIcon ? "show__pic" : "cake"}`}
+        />
       </div>
     </div>
   );
