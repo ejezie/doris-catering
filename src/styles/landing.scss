@@ -59,6 +59,12 @@
     width: 90%;
     margin: -55% 0% 0% -8.6%;
     padding: 15%;
+    h1{
+      font-size: 4rem;
+      // background-color: seagreen;
+      width: 20%;
+      padding: 1%;
+    }
     .port__wrap {
       display: grid;
       justify-content: center;
@@ -84,19 +90,23 @@
       .port__item {
         margin: -40% 0% 0% 0%;
       }
-    }
-    .bgimgfour{
-      z-index: -1;
-      margin: 40% 0% 0% 60%;
+      // .bgimgfour {
+      //   z-index: -1;
+      //   margin: -40% 0% 0% 0%;
+      // img{
+      //   height: 100px;
+      //   width: 100px;
+      // }
+      // }
     }
   }
   .contact {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: rgba(46, 139, 87, 0.3);
+    // background-color: rgba(46, 139, 87, 0.3);
     height: 50vh;
-    margin-top: -10%;
+    margin-top: -5%;
     .contact__img {
       // background-color: seagreen;
       padding: 5%;
@@ -154,25 +164,17 @@
       font-family: "Nothing You Could Do", cursive;
     }
   }
-  .foot {
-    height: 250px;
-    background-color: seagreen;
-    width: 100%;
-  }
   .black__bg {
-    height: 10vh;
+    height: 40vh;
     width: 100vw;
-    background-color: rgba(46, 139, 87, 1);
-    z-index: -2;
+    background-color: rgba(46, 139, 87, 0.5);
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    opacity: 0.3;
-    display: none;
     img {
-      width: 50px;
-      height: 50px;
+      width: 150px;
+      height: 150px;
     }
   }
 }

@@ -8,7 +8,7 @@ import bgcocktail from "../images/bgcocktail.png";
 import Title from "../components/Title";
 // import { TimelineMax, Power1 } from "gsap";
 import Portfolio from "../components/Portfolio";
-import cake from "../images/delivery.jpg";
+// import cake from "../images/delivery.jpg";
 import bgcake from "../images/bgcake.png";
 import contactbyk from "../images/contactbyk.png";
 import egusi from "../images/egusi.png";
@@ -19,6 +19,7 @@ import assort from "../images/assort.png";
 import fried from "../images/fried.png";
 import logo from "../images/logo.png";
 import bgtray from "../images/bgtray.png";
+import me from "../images/me.png";
 
 function LandingPage() {
   // const [offsetY, setOffsetY] = useState(0);
@@ -70,9 +71,6 @@ function LandingPage() {
         <Parallax speed={-1} className="bgimgone">
           <img src={bgcake} alt="" />
         </Parallax>
-
-        <div className="header__span__wrap"></div>
-        <div className="line"></div>
       </div>
       {/*  */}
       <div className="cocktail__wrap anim-text" id="home">
@@ -84,8 +82,6 @@ function LandingPage() {
         <Parallax speed={-1} className="bgimgtwo">
           <img src={bgcocktail} alt="" />
         </Parallax>
-        <div className="header__span__wrap"></div>
-        <div className="line"></div>
       </div>
       {/*  */}
       <div className="food__wrap anim-text" id="home">
@@ -97,14 +93,11 @@ function LandingPage() {
         <Parallax speed={0} className="bgimgthree">
           <img src={bgcook} alt="" />
         </Parallax>
-        <div className="header__span__wrap"></div>
-        <div className="line"></div>
       </div>
       {/*  */}
 
-      <section className="portfolios" id="portfolio">
+      <section className="portfolios">
         <Parallax speed={-4}>
-          <h1>Portfolio</h1>
           <div className="port__wrap">
             <div className="port__item">
               <Portfolio
@@ -150,7 +143,7 @@ function LandingPage() {
                 rating={"rating: "}
               />
             </div>
-            <div className="port__item">
+            <div className="port__item" id="portfolio">
               <Portfolio
                 name={"Fried Rice"}
                 image={fried}
@@ -158,10 +151,10 @@ function LandingPage() {
                 rating={"rating: "}
               />
             </div>
+            {/* <Parallax speed={0} className="bgimgfour">
+              <img src={bgtray} alt="" />
+            </Parallax> */}
           </div>
-        </Parallax>
-        <Parallax speed={0} className="bgimgfour">
-          <img src={bgtray} alt="" />
         </Parallax>
       </section>
       {/*  */}
@@ -202,26 +195,16 @@ function LandingPage() {
           </div>
         </section>
       </Parallax>
-      <Parallax speed={-3.5}>
-        <div className="black__bg">
-          <h1>DoraGroovyKitchen</h1>
-          <img src={logo} alt="" />
-        </div>
-      </Parallax>
+      <Parallax speed={-3.5}></Parallax>
       <Parallax speed={-4}>
-        <section className="about">
-          <div className="about__wrap">
-            <img src="" alt="" />
-            <p>
-              I am Doris, Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Minima magnam optio velit labore quod dolores, at fugiat
-              tempora perspiciatis nesciunt, quasi quisquam obcaecati animi
-              nobis pariatur vitae possimus delectus praesentium?
-            </p>
-            <div className="foot"></div>
+        <section>
+          <div className="black__bg">
+            <h1>DoraGroovyKitchen</h1>
+            <img src={logo} alt="" />
           </div>
         </section>
       </Parallax>
+      <div id="contact"></div>
     </div>
   );
 }

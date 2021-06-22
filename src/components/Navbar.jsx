@@ -18,9 +18,9 @@ function Navbar() {
           <Link to="contact" smooth={true} duration={1000}>
             <div className="contact">Contact</div>
           </Link>
-          <Link to="about" smooth={true} duration={1000}>
+          {/* <Link to="about" smooth={true} duration={1000}>
             <div className="about">About</div>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

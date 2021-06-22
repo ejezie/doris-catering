@@ -1,18 +1,20 @@
 .portfolio {
   position: relative;
   .drop {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 1);
     position: absolute;
-    height: 120%;
+    height: 95%;
     width: 57%;
     transition: all 1s;
-    margin: 11% 0% 0% 0%;
-    padding: 0%;
+    margin: 18.5% 0% 0% 0%;
     border-radius: 10px;
     .drop__content {
-      background-color: rgba(46, 139, 87, 0.8);
-      margin: 95% 0% 0% 0%;
-      padding: 1%;
+      // background-color: rgba(46, 139, 87, 1);
+      color: seagreen;
+      margin: 85% 0% 0% 0%;
+      padding: 3%;
+      height: 22%;
+      transition: all 1s 0.8s;
       i {
         color: gold;
       }
@@ -21,14 +23,18 @@
   .dropped {
     background-color: rgb(255, 255, 255);
     position: absolute;
-    height: 120%;
+    height: 95%;
     width: 57%;
-    transition: all 1s;
-    margin: -90% 0% 0% 0%;
+    transition: all 1s 1s;
+    margin: 20% 0% 0% 0%;
+    border-radius: 10px;
     .drop__content {
-      background-color: rgba(46, 139, 87, 0.8);
-      margin: 95% 0% 0% 0%;
-      padding: 1%;
+      // background-color: rgba(46, 139, 87, 1);
+      color: seagreen;
+      margin: 60% 0% 0% 0%;
+      padding: 3%;
+      height: 22%;
+      transition: all 1s 1s;
       i {
         color: gold;
       }
@@ -46,19 +52,19 @@
       object-fit: cover;
       border-radius: 4px;
       padding: 0.2%;
+      padding: 2%;
       background-color: white;
-      
       opacity: 0;
+      transition: all 1s 1s;
     }
-    .show__pic{
+    .show__pic {
       height: 200px;
-      width: 270px;
-      margin-top: 22%;
+      width: 301px;
+      margin: 20% -2.7%;
       object-fit: cover;
       border-radius: 4px;
-      padding: 0.2%;
+      padding: 2%;
       transition: all 1s 1s;
-      // background-color: white;
       opacity: 1;
     }
     .icon__wrap {
@@ -66,20 +72,21 @@
       // background-color: seagreen;
       padding: 0.6%;
       border-radius: 10px;
+      opacity: 2;
       .icon__arrow {
         font-size: 2.2rem;
         transform: rotate(180deg);
         cursor: pointer;
         transition: all 1s;
-        
+        color: white;
       }
       .rotate__arrow {
         font-size: 2.2rem;
         transform: rotate(180deg);
         cursor: pointer;
         transform: rotate(0deg);
-        transition: all 1s;
-        color: seagreen;
+        transition: all 1s 1.7s;
+        color: gold;
       }
     }
   }
