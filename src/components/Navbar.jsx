@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 
-function Navbar() {
+function Navbar({ useBar, barStatus }) {
   return (
     <div className="navbar">
       <div className="nav__wrapper">
@@ -18,9 +18,18 @@ function Navbar() {
           <Link to="contact" smooth={true} duration={1000}>
             <div className="contact">Contact</div>
           </Link>
-          {/* <Link to="about" smooth={true} duration={1000}>
-            <div className="about">About</div>
-          </Link> */}
+        </div>
+        <div
+          className={`${barStatus ? "bars__click" : "bars"}`}
+          onClick={useBar}>
+          <div className="barwrap__one">
+            <div className="bar__one"></div>
+            <div className="bar__two"></div>
+          </div>
+          <div className="barwrap__two">
+            <div className="bar__three"></div>
+            <div className="bar__four"></div>
+          </div>
         </div>
       </div>
     </div>

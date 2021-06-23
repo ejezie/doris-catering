@@ -90,7 +90,7 @@ function LandingPage() {
             <Title logo={food} text={"DoraCooksFire"} />
           </div>
         </Parallax>
-        <Parallax speed={0} className="bgimgthree">
+        <Parallax speed={-1} className="bgimgthree">
           <img src={bgcook} alt="" />
         </Parallax>
       </div>
@@ -204,7 +204,9 @@ function LandingPage() {
           </div>
         </section>
       </Parallax>
-      <div id="contact"></div>
+      <Parallax speed={-5}>
+        <div id="contact"></div>
+      </Parallax>
     </div>
   );
 }

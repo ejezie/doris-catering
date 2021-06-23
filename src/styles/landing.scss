@@ -12,12 +12,20 @@
     align-items: center;
     flex-direction: column;
     margin-top: 20%;
+    @media screen and (max-width: 768px) {
+      margin-top: 60%;
+    }
     .title__header {
       // font-size: 3rem;
     }
     .bgimgone {
       z-index: -1;
       margin: -33% 50% 0% 0%;
+      img {
+        width: 150%;
+        height: 150%;
+      }
+     
     }
   }
   .cocktail__wrap {
@@ -25,6 +33,10 @@
     align-items: center;
     flex-direction: column;
     margin-top: 1%;
+    padding: 2%;
+    @media screen and (max-width: 768px) {
+      margin-top: 53%;
+    }
     .title__header {
       // font-size: 3rem;
       // margin-top: 50%;
@@ -34,6 +46,16 @@
       margin: -20% 0% 0% 50%;
       background-color: rgba(141, 8, 8, 0.5);
       border-radius: 25px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      @media screen and (max-width: 1100px) {
+        // img{
+        //   width: 100%;
+        //   height: 100%;
+        // }
+      }
     }
   }
   .food__wrap {
@@ -42,6 +64,9 @@
     flex-direction: column;
     margin-top: -8%;
     z-index: 1;
+    @media screen and (max-width: 768px) {
+      margin-top: 35%;
+    }
     // height: 100vh;
     .food__header {
       // font-size: 3rem;
@@ -50,8 +75,14 @@
       z-index: -1;
       margin: 15% 60% 0% 0%;
       img {
-        height: 800px;
-        width: 800px;
+        width: 150%;
+        height: 150%;
+      }
+      @media screen and (max-width: 768px) {
+        img {
+          width: 120%;
+          height: 120%;
+        }
       }
     }
   }
@@ -59,7 +90,10 @@
     width: 90%;
     margin: -55% 0% 0% -8.6%;
     padding: 15%;
-    h1{
+    @media screen and (max-width: 768px) {
+      margin-top: 35%;
+    }
+    h1 {
       font-size: 4rem;
       // background-color: seagreen;
       width: 20%;
@@ -73,6 +107,9 @@
       overflow: hidden;
       width: 100vw;
       height: 50vh;
+      @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
       // background-color: salmon;
       .port__item {
         margin: -40% 0% 0% 0%;
@@ -87,6 +124,9 @@
       justify-content: center;
       align-items: center;
       // background-color: seagreen;
+      @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
       .port__item {
         margin: -40% 0% 0% 0%;
       }
@@ -112,7 +152,6 @@
       padding: 5%;
       border-radius: 50%;
       img {
-        animation: byk 2s ease-in-out linear;
         transform: translateY(60px);
       }
     }
@@ -184,13 +223,5 @@
   }
   100% {
     opacity: 1;
-  }
-}
-@keyframes byk {
-  0% {
-    transform: translateY(3px);
-  }
-  100% {
-    transform: translateY(0px);
   }
 }
