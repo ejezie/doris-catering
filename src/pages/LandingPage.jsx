@@ -97,7 +97,7 @@ function LandingPage() {
       {/*  */}
 
       <section className="portfolios">
-        <Parallax speed={-5}>
+        <Parallax speed={-4.5}>
           <div className="port__wrap">
             <div className="port__item">
               <Portfolio
@@ -125,7 +125,7 @@ function LandingPage() {
             </div>
           </div>
         </Parallax>
-        <Parallax speed={-5}>
+        <Parallax speed={-4.5}>
           <div className="port__wraptwo">
             <div className="port__item">
               <Portfolio
@@ -158,7 +158,7 @@ function LandingPage() {
         </Parallax>
       </section>
       {/*  */}
-      <Parallax speed={-5}>
+      <Parallax speed={-4.5}>
         <section className="contact">
           <div className="contact__img">
             <img src={contactbyk} alt="" />
