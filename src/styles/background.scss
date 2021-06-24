@@ -25,6 +25,7 @@
       clip-path: circle(100px at 100% -5%);
       -webkit-clip-path: circle(100px at 100% -5%);
       transition: all 1s ease-in-out;
+      position: fixed;
       display: none;
       @media screen and (max-width: 768px) {
         display: flex;
