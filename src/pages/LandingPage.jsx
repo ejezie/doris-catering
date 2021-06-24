@@ -97,7 +97,7 @@ function LandingPage() {
       {/*  */}
 
       <section className="portfolios">
-        <Parallax speed={-4}>
+        <Parallax speed={-5}>
           <div className="port__wrap">
             <div className="port__item">
               <Portfolio
@@ -117,15 +117,15 @@ function LandingPage() {
             </div>
             <div className="port__item">
               <Portfolio
-                name={"Jollof Rice"}
-                image={jollof}
-                Ingredient={"Rice, Tomatoes, Chicken"}
+                name={"Jollof rice"}
+                image={chop}
+                Ingredient={"rice, tomatoes, chicken"}
                 rating={"rating: "}
               />
             </div>
           </div>
         </Parallax>
-        <Parallax speed={-4}>
+        <Parallax speed={-5}>
           <div className="port__wraptwo">
             <div className="port__item">
               <Portfolio
@@ -158,13 +158,13 @@ function LandingPage() {
         </Parallax>
       </section>
       {/*  */}
-      <Parallax speed={-4}>
+      <Parallax speed={-5}>
         <section className="contact">
           <div className="contact__img">
             <img src={contactbyk} alt="" />
           </div>
           <div className="contact__icons">
-            <form action="#" className="contact__form">
+            <form action="https://formspree.io/f/xjvjovbw" method="POST" className="contact__form">
               <h3>
                 Send us a message <i class="far fa-envelope-open"></i>
               </h3>
@@ -204,7 +204,7 @@ function LandingPage() {
           </div>
         </section>
       </Parallax>
-      <Parallax speed={-5}>
+      <Parallax speed={0}>
         <div id="contact"></div>
       </Parallax>
     </div>

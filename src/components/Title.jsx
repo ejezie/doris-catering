@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import { TimelineMax, Power1 } from "gsap";
+import { gsap, Power1 } from "gsap";
 
-function Title({logo, text}) {
+function Title({ logo, text }) {
   useEffect(() => {
     main();
   });
@@ -28,18 +28,23 @@ function Title({logo, text}) {
   }
 
   function runAnim(targetOne) {
-    let tl = new TimelineMax();
-    tl.staggerTo(targetOne, 1.5, { scaleX: 0, ease: Power1.easeInOut }, 2);
+    //
+    gsap.from(targetOne, {
+      scaleX: 0,
+      ease: Power1.easeInOut,
+      duration: 1,
+      delay: 2,
+    });
   }
   return (
     <div className="title">
       <img className="logo" src={logo} alt="logo" />
-        <div className="head__span__wrap">
-          <h1 className="text__head">
-            <span className="text">{text}</span>
-            <span className="mask"></span>
-          </h1>
-        </div>
+      <div className="head__span__wrap">
+        <h1 className="text__head">
+          <span className="text">{text}</span>
+          <span className="mask"></span>
+        </h1>
+      </div>
     </div>
   );
 }

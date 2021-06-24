@@ -45,10 +45,10 @@
           width: 100%;
           height: 96%;
           background-color: gold;
-          // opacity: 0.8;
           border-radius: 15px;
           transform: scaleX(1);
           transform-origin: 100% 0;
+          transition: all 2s ease-in-out;
         }
       }
     }
