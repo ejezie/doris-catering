@@ -290,3 +290,4 @@ window.FontAwesomeKitConfig = {
     }
   } catch (e) {}
 })();
+
